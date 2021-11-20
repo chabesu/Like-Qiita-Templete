@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Qiita風</title>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- サイドメニュー関連 -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- コード埋め込み -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+    <!-- webフォント -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+
+    <style></style>
+  </head>
+
+  <body>
+    <div id="header"><a href="#" id="title">Qiita風</a></div>
+    <div id="out">
+      <div id="head">
+        <h1>タイトル</h1>
+        <h2>作成日 2021年11月20日</h2>
+      </div>
+
+      <div id="main" class="entry-content">
+
+        <h3>大見出し 1</h3>
+        <p>　大見出し 1 の内容です。</p>
+
+        <h4>中見出し 1-1</h4>
+        <p>　中見出し 1 の内容です。</p>
+
+        <h5>小見出し 1-1-1</h5>
+        <p>　小見出し 1-1-1 の内容です。</p>
+        
+        <h3>リスト</h3>
+        <h4>番号なしリスト</h4>
+        <ul>
+          <li>リスト1</li>
+          <li>リスト2</li>
+          <li>リスト3</li>
+        </ul>
+        <h4>番号ありリスト</h4>
+        <ol>
+          <li>リスト1</li>
+          <li>リスト2</li>
+          <li>リスト3</li>
+        </ol>
+
+        <h4>表</h4>
+        <p>　表の採番は自動で行います。</p>
+        <figure class="table">
+          <table>
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col">サンプル</th>
+                <th scope="col">サンプル</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>サンプル</th>
+                <td>サンプル</td>
+                <td>サンプル</td>
+              </tr>
+              <tr>
+                <th>サンプル</th>
+                <td>サンプル</td>
+                <td>サンプル</td>
+              </tr>
+            </tbody>
+          </table>
+          <figcaption class="table-cap">表の1つ目</figcaption>
+        </figure>
+
+        <figure class="table">
+          <table>
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col">サンプル</th>
+                <th scope="col">サンプル</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>サンプル</th>
+                <td>サンプル</td>
+                <td>サンプル</td>
+              </tr>
+              <tr>
+                <th>サンプル</th>
+                <td>サンプル</td>
+                <td>サンプル</td>
+              </tr>
+            </tbody>
+          </table>
+          <figcaption class="table-cap">表の2つ目</figcaption>
+        </figure>
+
+        <h4>図</h4>
+        <p>　図の採番は自動で行います。</p>
+        <figure class="fig">
+          <a href="https://zatsugaku-engineer.com/wp-content/uploads/2021/11/Like-Qiita1.png"><img src="https://zatsugaku-engineer.com/wp-content/uploads/2021/11/Like-Qiita1.png" width="50%" /></a>
+          <figcaption class="fig-cap">画像の1つ目</figcaption>
+        </figure>
+        <figure class="fig">
+          <a href="https://zatsugaku-engineer.com/wp-content/uploads/2021/11/Like-Qiit2.png"><img src="https://zatsugaku-engineer.com/wp-content/uploads/2021/11/Like-Qiit2.png" width="50%" /></a>
+          <figcaption class="fig-cap">画像の2つ目</figcaption>
+        </figure>
+
+        <h4>ソースの埋め込み</h4>
+        <pre class="prettyprint lang-js">
+            <div class="sorcefile">alert.js</div>
+            <i class="fas fa-copy"></i>
+          <code>
+let weather = 'sunny';
+if(weather === 'sunny') {
+  alert('洗濯物が干せる！！');
+} else {
+  alert('洗濯物が干せない。。。');
+}
+          </code>
+        </pre>
+      </div>
+      <!-- main -->
+
+      <div id="footer">
+        <a href="https://zatsugaku-engineer.com/">© 2021 雑学エンジニアブログ All rights reserved.</a>
+      </div>
+      <!-- footer -->
+    </div>
+    <!-- out -->
+
+    <div id="side-menu">
+      <div id="sticky-navigator"></div>
+    </div>
+    <!-- side-menu -->
+
+    <!-- コードのコピー用のjavascript読み込み -->
+    <script type="text/javascript" src="js/CodeCopy.js"></script>
+  </body>
+</html>

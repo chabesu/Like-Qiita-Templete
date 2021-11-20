@@ -1,0 +1,412 @@
+  /***** 変数定義*******************************************/
+  :root {
+    --out-width: 95%; /*メインの幅*/
+    --side-menu-top: 201px; /*サイドメニューのTopの位置*/
+    --main-padding: 30px; /*メイン記事の内側の空白の幅*/
+  }
+
+  @media screen and (min-width:960px) {
+    /*　画面サイズが960pxからはここを読み込む　*/
+    :root {
+      --out-width: 50%; /*メインの幅*/
+      --side-menu-top: 201px; /*サイドメニューのTopの位置*/
+      --main-padding: 30px; /*メイン記事の内側の空白の幅*/
+   }
+  }
+
+  /***** default styles*******************************************/
+  
+  body {
+    font-size: 13px;
+    *font-size: small;
+    /* IE7 */
+    *font: x-small;
+    /* IE6 */
+  }
+  
+  * {
+    line-height: 1.6;
+    font-size: 100%;
+  }
+  
+  /***** text styles*******************************************/
+  
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    text-align: center;
+    color: #333333;
+    margin: 0 auto;
+    background-color: #efefef;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  }
+  
+  p {
+    line-height: 1.9;
+    text-align: justify;
+    text-justify: distribute;
+  }
+  
+  p,
+  ul,
+  ol,
+  dl,
+  table,
+  pre {
+    font-size: 100%;
+    letter-spacing: 0.02em;
+  }
+  
+  img {
+    border: 0;
+    vertical-align: bottom;
+  }
+  
+  /***** Link styles*******************************************/
+  
+  #out a {
+    text-decoration: none;
+  }
+  
+  #out a:link {
+    color: #337ed2;
+    border-bottom: 1px solid #56aee1;
+  }
+  
+  #out a:visited {
+    color: #56aee1;
+    border-bottom: 1px solid #56aee1;
+  }
+  
+  #out a:hover {
+    color: #337ed2;
+    border-bottom: 1px solid #337ed2;
+  }
+  
+  /***** layout styles*******************************************/
+
+  #out {
+    margin: 0 auto 10px auto;
+    text-align: left;
+    width: var(--out-width);
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    background-color: #ffffff;
+  }
+  
+  #head {
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin: 40px auto 20px auto;
+    padding: var(--main-padding);
+  }
+  
+  #menu {
+    text-align: right;
+    font-size: 87%;
+    color: #cccccc;
+  }
+  
+  h1 {
+    color: rgba(0,0,0,0.87);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    padding: 0;
+  }
+  
+  h2 {
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,0.6);
+  }
+  
+  h3 {
+    color: #333333;
+    font-size: 1.8em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.1em;
+    font-weight: bold;
+    line-height: 1.5;
+    font-feature-settings: "palt";
+    margin-top: 2.2em;
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+  }
+  
+  h4 {
+    color: #333333;
+    font-size: 1.6em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.1em;
+    font-weight: bold;
+    line-height: 1.5;
+    font-feature-settings: "palt";
+    margin-top: 2.2em;
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+  }
+
+  h5 {
+    color: #333333;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5;
+    font-feature-settings: "palt";
+    margin-top: 2.2em;
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+  }
+  
+  #main {
+    letter-spacing: 0.1em;
+    font-size: 110%;
+    margin: var(--main-padding);
+    line-height: 1.9;
+  }
+  
+  #main ul {
+    margin: 0 5px 5px 0;
+    padding: 0px 0px 0px 20px;
+    list-style: circle;
+  }
+  
+  #main ol {
+    margin: 0 5px 5px 0;
+    padding: 0px 0px 0px 20px;
+  }
+  
+  #main li {
+    margin: 0.5em 0 0.5em 1.5em;
+    letter-spacing: 0.02em;
+    padding: 0.3em 0 0.3em 0.1em;
+  }
+  
+  #footer {
+    margin: 3em 0 0 0;
+    padding: 2em 0;
+    border-top: 1px solid #cccccc;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+  
+  .copyright {
+    font-size: 75%;
+    margin: 0 15px 0 0;
+    padding: 5px 0 10px 0;
+    text-align: right;
+    color: #888888;
+    letter-spacing: 0.1em;
+  }
+  
+  .copyright a:link,
+  a:visited,
+  a:hover {
+    color: #888888;
+    border-bottom: none;
+    text-decoration: none;
+  }
+  
+  /* 表 */
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table tr {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    padding: 0.35em;
+  }
+  
+  table th,
+  table td {
+    padding: 1em 10px 1em 1em;
+    border-right: 1px solid #bbb;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: 0.85em;
+  }
+  
+  table thead tr {
+    background-color: #eee;
+  }
+  
+  /* 表と図の自動採番 */
+  figure.fig {
+    counter-increment: fig-no;
+    width: auto;
+    text-align: center;
+  }
+  
+  figure.table {
+    counter-increment: table-no;
+    width: auto;
+  }
+  
+  figcaption {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  figcaption.fig-cap::before {
+    content: "fig." counter(fig-no) " ";
+  }
+  
+  figcaption.table-cap::before {
+    content: "table." counter(table-no) " ";
+  }
+  
+  /* コード埋め込み */
+  pre {
+    width: 100%;
+    margin: 1em calc(-1 * var(--main-padding));
+    padding: 0 var(--main-padding);
+    position: relative;
+    font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+    overflow-x:auto; /*目次がオーバーフローした場合、スクロールバーを出す*/
+  }
+  
+  code {
+    font-size: 14px;
+    line-height: 1.4;
+    width: 100%;
+  }
+  
+  .sorcefile {
+    position: absolute;
+    top: 0;
+    left: 3em;
+    color: #eee;
+    display: inline-block;
+    background-color: #777;
+    padding: 2px 4px;
+  }
+  
+  i {
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+  
+  i::after {
+    content: attr(data-content);
+    color: #fff;
+  }
+  
+  /* サイドメニュー関連 */
+  #side-menu {
+    text-align: left;
+    position: fixed;
+    top: var(--side-menu-top);  /*縦位置の指定、高さを調整できるように変数で指定している。*/
+    left: calc(100vw / 2 + var(--out-width) / 2 + 20px);  /*横位置の指定、メイン記事の幅の変更に追従。*/
+  }
+
+  #side-menu a:link,
+  #side-menu a:visited {
+    color: #888;
+    text-decoration: none;
+  }
+  #side-menu a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  #side-menu a:active {
+    color: #999;
+    border: none;
+  }
+  
+  #sticky-navigator {
+    line-height: 1.6;
+    color: #555;
+    font-size: 0.9em;
+    margin-bottom: 48px;
+    padding: 10px;
+    height: calc(100vh - var(--side-menu-top) - 150px); /*目次の高さ*/
+    overflow-y:auto; /*目次がオーバーフローした場合、スクロールバーを出す*/
+  }
+  #sticky-navigator ul {
+    padding: 0px;
+  }
+  #sticky-navigator ul li:first-child {
+    border-top: none;
+    padding-top: 8px;
+  }
+  #sticky-navigator ul li {
+    list-style: none;
+    line-height: 1.4;
+  }
+  #sticky-navigator ul li.nav-h3 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  #sticky-navigator ul li.nav-h4 {
+    margin-top: 4px;
+    margin-left: 8px;
+  }
+
+  #sticky-navigator ul li.nav-h5 {
+    margin-top: 4px;
+    margin-left: 16px;
+  }
+
+  #sticky-navigator ul li.current {
+    background-color: #dadde1;
+  }
+  
+  /* トップに戻る関連 */
+  #page-top {
+    position: fixed;
+    bottom: 32px;
+    left: calc(100vw / 2 + var(--out-width) / 2 + 20px);
+    z-index: 100;
+    transition: top 0.5s, bottom 0.5s;
+  }
+  #page-top a {
+    background: #999;
+    color: #fff;
+    width: 50px;
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+    border-radius: 25px;
+  }
+  #page-top.hide {
+    bottom: -100px;
+  }
+  
+  /*ヘッダー*/
+  #header {
+    width: 100%;
+    background-color: #55c500;
+  }
+  
+  #title {
+    display: block;
+    width: 100%;
+    width: var(--out-width);
+    margin: 0 auto 0 auto;
+    text-align: left;
+    color: #fff;
+    font-size: 35px;
+    text-decoration: none;
+  }
+
+  /* コピーボタン */
+  .fa-copy {
+    color:#777;
+  }
